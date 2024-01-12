@@ -1,0 +1,64 @@
+{
+  "workbench.colorTheme": "Min Dark",
+  "workbench.iconTheme": "symbols",
+  "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "smooth",
+  "editor.fontFamily": "'JetBrains Mono', 'Fira Code'",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12,
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.lineHeight": 1.4,
+  "editor.lineNumbers": "on",
+  "editor.minimap.enabled": true,
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.showUnused": true,
+  "editor.tabSize": 4,
+  /* --- JavaScript Settings --- */
+  "[javascript]": {
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.tabSize": 2
+  },
+  /* --- Python Settings --- */
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.rulers": [
+      88
+    ]
+  },
+  "black-formatter.args": [
+    "--line-length=88"
+  ],
+  /* --- Dart Settings --- */
+  "[dart]": {
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  /* --- Misc --- */
+  "[dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
+    "rust": false
+  },
+  "rainbow_csv.autodetect_separators": [
+    ";",
+    "TAB"
+  ],
+}
