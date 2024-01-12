@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# Navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# Shortcuts
+alias dl="cd ~/Downloads"
+alias dc="cd ~/Documents"
+alias p="cd ~/Projects"
+
+# Utils
+alias path='echo -e ${PATH//:/\\n}'
+alias reload='exec ${SHELL} -l'
+alias urlencode='python3 -c "import sys, urllib.parse as ul; print(ul.quote_plus(sys.argv[1]));"'
+
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
