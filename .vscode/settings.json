@@ -1,6 +1,12 @@
+/* VSCode My User Settings */
 {
+  "window.commandCenter": false,
+  "window.menuBarVisibility": "compact",
   "workbench.colorTheme": "Min Dark",
+  "workbench.editor.labelFormat": "short",
+  "workbench.layoutControl.enabled": false,
   "workbench.iconTheme": "symbols",
+  "workbench.startupEditor": "newUntitledFile",
   "editor.cursorStyle": "line",
   "editor.cursorBlinking": "smooth",
   "editor.fontFamily": "'JetBrains Mono', 'Fira Code'",
@@ -11,12 +17,27 @@
   "editor.lineHeight": 1.4,
   "editor.lineNumbers": "on",
   "editor.minimap.enabled": true,
+  "editor.renderLineHighlight": "gutter",
   "editor.rulers": [
     80,
     120
   ],
+  "editor.scrollbar.vertical": "hidden",
+  "editor.semanticHighlighting.enabled": false,
   "editor.showUnused": true,
   "editor.tabSize": 4,
+  "explorer.compactFolders": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    ".env": "*.env, .env.*, .envrc, env.d.ts",
+    ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
+    "Dockerfile": "*.dockerfile, *.Dockerfile, .devcontainer.*, .dockerignore, compose.*, docker-compose.*, dockerfile*, Dockerfile.*, Dockerfile*",
+    "requirements.txt": "requirements.txt, requirements-*.txt, requirements*.in",
+    "README*": "AUTHORS, Authors, BACKERS*, Backers*, CHANGELOG*, CITATION*, CODEOWNERS, CODE_OF_CONDUCT*, CONTRIBUTING*, CONTRIBUTORS, COPYING*, CREDITS, Changelog*, Citation*, Code_Of_Conduct*, Codeowners, Contributing*, Contributors, Copying*, Credits, GOVERNANCE.MD, Governance.md, HISTORY.MD, History.md, LICENSE*, License*, MAINTAINERS, Maintainers, README*, Readme*, SECURITY.MD, SPONSORS*, Security.md, Sponsors*, authors, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors, copying*, credits, governance.md, history.md, license*, maintainers, readme*, security.md, sponsors*",
+    "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, package-lock*, bun.lockb",
+    "tailwind.config*": "tailwind.config*, tailwind.config.*, postcss.config*",
+  },
+  "terminal.integrated.fontSize": 14,
   /* --- JavaScript Settings --- */
   "[javascript]": {
     "editor.maxTokenizationLineLength": 2500,
