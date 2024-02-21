@@ -48,7 +48,7 @@
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.rulers": [
       88
-    ]
+    ],
   },
   "black-formatter.args": [
     "--line-length=88"
@@ -70,6 +70,10 @@
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[makefile]": {
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4
   },
   "github.copilot.enable": {
     "*": true,
