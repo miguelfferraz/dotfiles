@@ -1,89 +1,73 @@
-/* VSCode My User Settings */
 {
-  "window.commandCenter": false,
-  "window.menuBarVisibility": "compact",
-  "workbench.colorTheme": "Min Dark",
-  "workbench.editor.labelFormat": "short",
-  "workbench.layoutControl.enabled": false,
-  "workbench.iconTheme": "symbols",
-  "workbench.startupEditor": "newUntitledFile",
-  "editor.cursorStyle": "line",
-  "editor.cursorBlinking": "smooth",
-  "editor.fontFamily": "'JetBrains Mono', 'Fira Code'",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 12,
-  "editor.formatOnSave": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  // Editor Settings
+  "editor.guides.bracketPairs": true,
   "editor.inlineSuggest.enabled": true,
-  "editor.lineHeight": 1.4,
-  "editor.lineNumbers": "on",
-  "editor.minimap.enabled": true,
-  "editor.renderLineHighlight": "gutter",
-  "editor.rulers": [
-    80,
-    120
-  ],
-  "editor.scrollbar.vertical": "hidden",
-  "editor.semanticHighlighting.enabled": false,
-  "editor.showUnused": true,
-  "editor.tabSize": 4,
-  "explorer.compactFolders": false,
-  "explorer.fileNesting.enabled": true,
-  "explorer.fileNesting.patterns": {
-    ".env": "*.env, .env.*, .envrc, env.d.ts",
-    ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
-    "Dockerfile": "*.dockerfile, *.Dockerfile, .devcontainer.*, .dockerignore, compose.*, docker-compose.*, dockerfile*, Dockerfile.*, Dockerfile*",
-    "requirements.txt": "requirements.txt, requirements-*.txt, requirements*.in",
-    "README*": "AUTHORS, Authors, BACKERS*, Backers*, CHANGELOG*, CITATION*, CODEOWNERS, CODE_OF_CONDUCT*, CONTRIBUTING*, CONTRIBUTORS, COPYING*, CREDITS, Changelog*, Citation*, Code_Of_Conduct*, Codeowners, Contributing*, Contributors, Copying*, Credits, GOVERNANCE.MD, Governance.md, HISTORY.MD, History.md, LICENSE*, License*, MAINTAINERS, Maintainers, README*, Readme*, SECURITY.MD, SPONSORS*, Security.md, Sponsors*, authors, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors, copying*, credits, governance.md, history.md, license*, maintainers, readme*, security.md, sponsors*",
-    "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, package-lock*, bun.lockb",
-    "tailwind.config*": "tailwind.config*, tailwind.config.*, postcss.config*",
-  },
-  "terminal.integrated.fontSize": 14,
-  /* --- JavaScript Settings --- */
-  "[javascript]": {
-    "editor.maxTokenizationLineLength": 2500,
-    "editor.tabSize": 2
-  },
-  /* --- Python Settings --- */
+  // Font Settings
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "450",
+  // Python
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.rulers": [
-      88
-    ],
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
   },
-  "black-formatter.args": [
-    "--line-length=88"
-  ],
-  /* --- Dart Settings --- */
-  "[dart]": {
-    "editor.formatOnType": true,
-    "editor.rulers": [
-      80
-    ],
-    "editor.selectionHighlight": false,
-    "editor.suggestSelection": "first",
-    "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": "off"
+  // JavaScript
+  "[javascript]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced"
   },
-  /* --- Misc --- */
-  "[dockercompose]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  // YAML
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "gitlens.codeLens.scopes": [
+      "document"
+    ]
   },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+  // C++
+  "C_Cpp.configurationWarnings": "enabled",
+  "C_Cpp.autocomplete": "default",
+  "C_Cpp.formatting": "clangFormat",
+  "C_Cpp.clang_format_sortIncludes": false,
+  "C_Cpp.clang_format_style": "file",
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, AccessModifierOffset: -3, ColumnLimit: 120, BinPackArguments: false, BinPackParameters: false }",
+  "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+  "C_Cpp.codeAnalysis.clangTidy.useBuildPath": true,
+  "[cpp]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
   },
-  "[makefile]": {
-    "editor.insertSpaces": false,
-    "editor.tabSize": 4
+  // Use Zsh as default shell
+  "terminal.integrated.profiles.linux": {
+    "Zsh": {
+      "path": "/usr/bin/zsh"
+    }
   },
+  "terminal.integrated.defaultProfile.linux": "Zsh",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "workbench.colorTheme": "Min Dark",
+  "workbench.iconTheme": "symbols",
+  "symbols.hidesExplorerArrows": false,
   "github.copilot.enable": {
     "*": true,
-    "plaintext": true,
+    "plaintext": false,
     "markdown": true,
     "scminput": false,
-    "rust": false
+    "python": true
   },
-  "rainbow_csv.autodetect_separators": [
-    ";",
-    "TAB"
-  ],
+  "files.exclude": {
+    "**/__pycache__": true
+  },
+  "editor.cursorSmoothCaretAnimation": "on",
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "python.defaultInterpreterPath": "/bin/python3",
 }
